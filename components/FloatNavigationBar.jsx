@@ -43,7 +43,6 @@ const NavOption = styled.div`
 	transition: all 0.5s ease;
 	padding: 5px;
 	border-radius: 50%;
-	border: 1px solid ${(props) => (props.isActive ? props.theme.colors.branding : "transparent")};
 
 	&:hover {
 		cursor: pointer;
@@ -51,7 +50,6 @@ const NavOption = styled.div`
 	svg {
 		width: 26px;
 		height: 26px;
-		color: ${(props) => (props.isActive ? props.theme.colors.branding : "#ccc")};
 	}
 `;
 
@@ -63,7 +61,6 @@ export default function FloatNavigationBar(props) {
 			<Link href="#section-home" passHref>
 				<NavOption
 					className="button"
-					isActive={active == "#section-home" ? true : false}
 					onClick={() => {
 						setActive("#section-home");
 					}}>
@@ -71,21 +68,19 @@ export default function FloatNavigationBar(props) {
 				</NavOption>
 			</Link>
 
-			{/* <Link href="#section-services" passHref>
+			<Link href="#section-services" passHref>
 				<NavOption
 					className="button"
-					isActive={active == "#section-services" ? true : false}
 					onClick={() => {
 						setActive("#section-services");
 					}}>
 					<Code />
 				</NavOption>
-			</Link> */}
+			</Link>
 
 			<Link href="#section-sobre-mim" passHref>
 				<NavOption
 					className="button"
-					isActive={active == "#section-sobre-mim" ? true : false}
 					onClick={() => {
 						setActive("#section-sobre-mim");
 					}}>
@@ -95,7 +90,6 @@ export default function FloatNavigationBar(props) {
 			<Link href="#section-portifolio" passHref>
 				<NavOption
 					className="button"
-					isActive={active == "#section-portifolio" ? true : false}
 					onClick={() => {
 						setActive("#section-portifolio");
 					}}>
@@ -106,7 +100,6 @@ export default function FloatNavigationBar(props) {
 			<Link href="#section-experiencia" passHref>
 				<NavOption
 					className="button"
-					isActive={active == "#section-experiencia" ? true : false}
 					onClick={() => {
 						setActive("#section-experiencia");
 					}}>

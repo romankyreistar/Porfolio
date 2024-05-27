@@ -184,11 +184,11 @@ export default function LayoutTemplate({ children }) {
 						</Link>
 					</Fade>
 
-					{/* <Fade top delay={200} duration={200}>
+					<Fade top delay={200} duration={200}>
 						<Link href="#section-services" passHref>
 							<NavbarOption>{language.navbarMenu.labelServices}</NavbarOption>
 						</Link>
-					</Fade> */}
+					</Fade>
 
 					<Fade top delay={200} duration={200}>
 						<Link href="#section-sobre-mim" passHref>
@@ -206,13 +206,13 @@ export default function LayoutTemplate({ children }) {
 						</Link>
 					</Fade>
 					<Fade top delay={500} duration={200}>
-						<LanguageSwitchButton />
+						{/* <LanguageSwitchButton /> */}
 						<SwitchThemeButton />
 					</Fade>
 				</NavbarOptionContainer>
 
 				<SwitchMenuContainer>
-					<LanguageSwitchButton />
+					{/* <LanguageSwitchButton /> */}
 					<SwitchThemeButton />
 				</SwitchMenuContainer>
 			</HeaderContainer>

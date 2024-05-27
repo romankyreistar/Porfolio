@@ -19,7 +19,7 @@ import { Django } from "@styled-icons/boxicons-logos/Django";
 import { Nodejs } from "@styled-icons/boxicons-logos/Nodejs";
 import { LogoVercel } from "@styled-icons/ionicons-solid/LogoVercel";
 import { Netlify } from "@styled-icons/simple-icons/Netlify";
-import { Materialui } from "@styled-icons/simple-icons/Materialui";
+import { Materialdesign } from "@styled-icons/simple-icons/Materialdesign";
 import { Styledcomponents } from "@styled-icons/simple-icons/Styledcomponents";
 import { Css3 } from "@styled-icons/boxicons-logos/Css3";
 import { Html5 } from "@styled-icons/boxicons-logos/Html5";
@@ -155,7 +155,7 @@ export default function CarrouselTechs(props) {
 					<Netlify />
 				</div>
 				<div className="slide">
-					<Materialui />
+					<Materialdesign />
 				</div>
 				<div className="slide">
 					<Styledcomponents />

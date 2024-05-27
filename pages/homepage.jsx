@@ -3,7 +3,7 @@ import Link from "next/link";
 
 //Third's librarys
 import styled from "styled-components";
-import Typed from "react-typed";
+import { ReactTyped } from "react-typed";
 import { useTheme } from "styled-components";
 import ProgressBar from "react-progressbar-on-scroll";
 
@@ -170,7 +170,7 @@ export default function HomePage() {
 			<LandingPageContainer>
 				<TitleLandingContainer>
 					<SubTitleLanding>{language.landingPage.apresentationText}</SubTitleLanding>
-					<Typed strings={[language.landingPage.firstTypeText, language.landingPage.secondTypeText]} typeSpeed={30} className="type-string " />
+					<ReactTyped strings={[language.landingPage.firstTypeText, language.landingPage.secondTypeText]} typeSpeed={80} backSpeed={40} loop className="type-string " />
 					<SubTitleLanding>{language.landingPage.resumeText}</SubTitleLanding>
 					<Link href="#section-sobre-mim" passHref>
 						<ButtonSaibaMais>{language.landingPage.buttonText}</ButtonSaibaMais>

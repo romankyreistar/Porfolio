@@ -330,14 +330,9 @@ export default function FooterPage(props) {
 			<Divider />
 			<ContainerBuildCopyright>
 				<SocialNetworkRowStack />
-				<div className="build-and-button-top">
-					<TextBuildProject>
-						{language.footer.labelBuildVersion}: {commit || ""}
-					</TextBuildProject>
-					<ButtonUpToTop onClick={goToTop}>
-						<KeyboardArrowUp />
-					</ButtonUpToTop>
-				</div>
+				<ButtonUpToTop onClick={goToTop}>
+					<KeyboardArrowUp />
+				</ButtonUpToTop>
 			</ContainerBuildCopyright>
 		</FooterContainer>
 	);
